@@ -10,10 +10,11 @@ export default function Hero() {
         <h1>Hi, I'm</h1>
         <h2>Arkell Kenney</h2>
         <p>
-          Passionate frontend developer driven to create exceptional web
-          experiences
+          Passionate web developer driven to create exceptional web experiences
         </p>
-        <button>Resume</button>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
       </div>
     </section>
   );
