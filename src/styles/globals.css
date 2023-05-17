@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-myrtle-green;
+    @apply bg-gunmetal;
     @apply text-isabelline;
   }
 
@@ -13,7 +13,7 @@
   h3,
   h4 {
     @apply text-2xl;
-    @apply text-oxford-blue;
+    @apply text-beige;
     @apply font-extrabold;
   }
 }
@@ -29,5 +29,13 @@
 
   .skill-list p {
     @apply uppercase text-xs;
+  }
+
+  .social-links {
+    @apply flex items-center justify-center;
+  }
+
+  .social-links img {
+    @apply h-7 w-7;
   }
 }
