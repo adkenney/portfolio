@@ -11,12 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'rich-black': '#041421',
-        gunmetal: '#042630',
-        'myrtle-green': '#4C7273',
-        'oxford-blue': '#161B33',
-        'cambridge-blue': '#85B09A',
+        gunmetal: '#2C3439',
         isabelline: '#F4EDEA',
+        beige: '#CED9BF',
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
