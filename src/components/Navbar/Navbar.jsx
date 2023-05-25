@@ -1,9 +1,12 @@
+import Link from 'next/link';
+import MenuButton from './MenuButton';
+
 export default function Navbar() {
   return (
     <header>
-      <nav>
+      <nav className="text-aggie-gold">
         <div className="hidden sm:block">
-          <ul className="flex gap-2">
+          <ul className="flex justify-end gap-2">
             <li>Home</li>
             <li>About</li>
             <li>Projects</li>
@@ -11,7 +14,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="sm:hidden">
-          <p>hamburger</p>
+          <MenuButton />
         </div>
       </nav>
     </header>

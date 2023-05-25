@@ -1,3 +1,3 @@
 export default function Layout({ children }) {
-  return <div className="p-5">{children}</div>;
+  return <div className="flex flex-col gap-8 p-5">{children}</div>;
 }

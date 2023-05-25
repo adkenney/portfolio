@@ -1,21 +1,28 @@
 import Image from 'next/image';
-import profileImg from '../../assets/Image.png';
+import profileImg from '../../assets/images/Image.png';
 export default function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center">
       <div>
         <Image src={profileImg} width={150} height={150} alt="Arkell Kenney" />
       </div>
-      <div>
-        <h1>Hi, I'm</h1>
-        <h2>Arkell Kenney</h2>
+      <div className="flex flex-col gap-4">
+        <div>
+          <h1>Hi, I'm</h1>
+          <h2>Arkell Kenney</h2>
+        </div>
         <p>
           Passionate web developer driven to create exceptional web experiences
         </p>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-          Resume
-        </a>
       </div>
+      <a
+        className="cta-button self-start mt-5"
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
     </section>
   );
 }

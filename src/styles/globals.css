@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gunmetal;
+    @apply bg-aggie-navy;
     @apply text-isabelline;
   }
 
@@ -13,8 +13,13 @@
   h3,
   h4 {
     @apply text-2xl;
-    @apply text-beige;
     @apply font-extrabold;
+  }
+
+  h2,
+  h3,
+  h4 {
+    @apply text-aggie-gold;
   }
 }
 
@@ -37,5 +42,9 @@
 
   .social-links img {
     @apply h-7 w-7;
+  }
+
+  .cta-button {
+    @apply text-aggie-gold border border-solid rounded border-aggie-gold uppercase p-1;
   }
 }
