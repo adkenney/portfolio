@@ -16,7 +16,7 @@ export default function Projects() {
               description={project.description}
               image={project.image}
               githubLink={project.github}
-              liveLink={project.liveLink}
+              liveLink={project.live}
               tools={project.tools}
             />
           );

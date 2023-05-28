@@ -3,8 +3,8 @@ import profileImg from '../../assets/images/Image.png';
 export default function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center">
-      <div>
-        <Image src={profileImg} width={150} height={150} alt="Arkell Kenney" />
+      <div className="relative w-2/4 border rounded-full border-aggie-gold overflow-hidden">
+        <Image src={profileImg} alt="Arkell Kenney" />
       </div>
       <div className="flex flex-col gap-4">
         <div>

@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'aggie-navy': '#0a192f',
+        'light-navy': '#0F2139',
         isabelline: '#F4EDEA',
         'aggie-gold': '#FDB827',
       },
