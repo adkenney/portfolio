@@ -7,12 +7,25 @@
     @apply bg-aggie-navy;
     @apply text-isabelline;
   }
+  section {
+    @apply mb-8;
+  }
+
+  h1 {
+    @apply text-2xl md:text-4xl;
+  }
+  h2 {
+    @apply text-xl md:text-3xl mb-4;
+  }
+
+  h3 {
+    @apply text-lg md:text-2xl;
+  }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply text-2xl;
     @apply font-extrabold;
   }
 
@@ -21,9 +34,45 @@
   h4 {
     @apply text-aggie-gold;
   }
+
+  nav li {
+    @apply cursor-pointer;
+  }
 }
 
 @layer components {
+  .line {
+    transition: 0.7s, rotate 0.7s;
+  }
+  .hamburger[aria-expanded='true'] .line {
+    stroke-dasharray: 55 83 55 300;
+    stroke-dashoffset: -85;
+  }
+  .hamburger svg {
+    transition: translate 0.7s, rotate 0.7s;
+  }
+
+  .hamburger[aria-expanded='true'] svg {
+    translate: 0 -5px;
+    rotate: 45deg;
+  }
+
+  nav ul li {
+    @apply hover:text-aggie-gold;
+  }
+
+  .hero-heading h1 {
+    @apply text-3xl lg:text-5xl;
+  }
+
+  .hero-heading h2 {
+    @apply text-[2.5rem] mb-2 lg:text-7xl;
+  }
+
+  .hero-heading p {
+    @apply text-isabelline text-[1.125rem] opacity-75 mb-5;
+  }
+
   .skill-list {
     @apply flex flex-wrap gap-2;
   }
@@ -36,6 +85,10 @@
     @apply uppercase text-xs;
   }
 
+  #contact {
+    @apply text-center;
+  }
+
   .social-links {
     @apply flex items-center justify-center;
   }
@@ -45,6 +98,10 @@
   }
 
   .cta-button {
-    @apply text-aggie-gold border border-solid rounded border-aggie-gold uppercase p-1;
+    @apply text-sm text-aggie-gold border border-solid rounded border-aggie-gold uppercase p-1;
+  }
+
+  .cta-button:hover {
+    @apply bg-aggie-gold text-aggie-navy;
   }
 }

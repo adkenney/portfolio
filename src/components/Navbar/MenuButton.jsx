@@ -1,12 +1,25 @@
-import { motion, Transition, SVGMotionProps } from 'framer-motion';
-export default function MenuButton({ isOpen }) {
+export default function MenuButton({ isOpen, handleCycle }) {
   return (
-    <div className="flex justify-end items-center">
-      <motion.svg viewBox="0 0 12 12" height={24} width={24} overflow="visible">
-        <motion.line x1="0" x2="4" y1="0" y2="0" stroke="white"></motion.line>
-        <motion.line x1="0" x2="4" y1="2" y2="2" stroke="white"></motion.line>
-        <motion.line x1="0" x2="4" y1="4" y2="4" stroke="white"></motion.line>
-      </motion.svg>
-    </div>
+    <button
+      className="hamburger flex justify-self-end lg:hidden z-50"
+      aria-expanded={`${isOpen ? true : false}`}
+      onClick={handleCycle}
+    >
+      <svg
+        className="stroke-white fill-none overflow-hidden"
+        viewBox="-5 -15 100 100"
+        width="50"
+        height="50"
+      >
+        <path
+          className="line"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeDasharray="60 23 40 300"
+          d="m 20 20 h 60 a 1 1 0 0 1 0 15 h -60 a 1 1 0 0 1 0 -30 h 30 v 60"
+        />
+      </svg>
+    </button>
   );
 }
