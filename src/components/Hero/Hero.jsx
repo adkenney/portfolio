@@ -2,27 +2,25 @@ import Image from 'next/image';
 import profileImg from '../../assets/images/Image.png';
 export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center">
-      <div className="relative w-2/4 border rounded-full border-aggie-gold overflow-hidden">
+    <section className="flex flex-col items-center gap-4 mt-12 md:flex-row md:gap-8">
+      <div className="relative border-2 rounded-full border-aggie-gold overflow-hidden max-w-xs">
         <Image src={profileImg} alt="Arkell Kenney" />
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="hero-heading">
         <div>
-          <h1>Hi, I'm</h1>
-          <h2>Arkell Kenney</h2>
+          <h1 className="text-xl md:text-2xl">Hi, I&apos;m</h1>
+          <h2 className="text-3xl md:text-4xl">Arkell Kenney.</h2>
         </div>
-        <p>
-          Passionate web developer driven to create exceptional web experiences
-        </p>
+        <p>I like to expand my brain with web development.</p>
+        <a
+          className="cta-button self-start"
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
       </div>
-      <a
-        className="cta-button self-start mt-5"
-        href="/resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resume
-      </a>
     </section>
   );
 }

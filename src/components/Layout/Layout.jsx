@@ -1,3 +1,7 @@
 export default function Layout({ children }) {
-  return <div className="flex flex-col gap-8 p-5">{children}</div>;
+  return (
+    <div className="p-5 md:px-12 lg:px-36 max-w-[1440px] mx-auto min-h-screen">
+      {children}
+    </div>
+  );
 }

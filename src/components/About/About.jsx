@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section>
-      <h2>About me</h2>
-      <p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p className="mb-2">
         Hi there! I am Arkell, and I am an enthusiastic web developer always
         eager to take on new challenges and broaden my knowledge. Besides
         coding, you can find me enjoying a great workout at the gym, reading a
