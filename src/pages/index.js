@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>adkenney</title>
+        <title>Arkell Kenney</title>
         <meta
           name="description"
           content="View my portfolio of work and learn more about my skills and experience. I am a web developer with a passion for creating user friendly webpages. My portfolio showcases implementation of mobile-first responsive design, sites working with API data, and other things. I am currently working with a variety of web development technologies such as, JavaScript, React, Next.js, and Tailwind CSS. If you are looking for a web developer with a love for learning and creating solutions, I would be honored to discuss your project with you. Contact me today to learn more."
