@@ -6,7 +6,7 @@ export default function MenuButton({ isOpen, handleCycle }) {
       onClick={handleCycle}
     >
       <svg
-        className="stroke-white fill-none overflow-hidden"
+        className="stroke-white fill-none overflow-hidden z-50"
         viewBox="-5 -15 100 100"
         width="50"
         height="50"

@@ -5,9 +5,12 @@ import ProjectView from './ProjectView';
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section
+      id="projects"
+      className="flex flex-col justify-center items-center"
+    >
       <h2>Projects</h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map(project => {
           return (
             <ProjectView

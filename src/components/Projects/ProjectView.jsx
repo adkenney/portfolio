@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import gitHubIcon from '../../assets/icons/icons8-github.svg';
+import ExternalIcon from '../../assets/icons/icons8-external-icon.svg';
 export default function ProjectView({
   name,
   description,
@@ -19,12 +21,12 @@ export default function ProjectView({
           })}
         </ul>
       </div>
-      <div className="flex gap-2">
+      <div className="project-links">
         <a href={githubLink} target="_blank" rel="noreferrer">
-          Github
+          <Image src={gitHubIcon} alt="" />
         </a>
         <a href={liveLink} target="_blank" rel="noreferrer">
-          Live Link
+          <Image src={ExternalIcon} alt="" />
         </a>
       </div>
     </div>

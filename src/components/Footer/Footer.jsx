@@ -20,7 +20,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <p className="text-xs text-center">
+      <p className="text-xs text-center mt-2">
         &copy;{` Arkell Kenney ${currDate.getFullYear()}. All Rights Reserved.`}
       </p>
     </footer>

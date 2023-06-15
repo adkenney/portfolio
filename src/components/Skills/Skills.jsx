@@ -9,7 +9,7 @@ import tailwindIcon from '../../assets/icons/icons8-tailwind-css.svg';
 
 export default function Skills() {
   return (
-    <section>
+    <section className="flex flex-col justify-center items-center">
       <h2>Skills</h2>
       <ul className="skill-list">
         <li>

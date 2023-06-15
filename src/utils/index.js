@@ -1,7 +1,24 @@
 import entertainmentImg from '../assets/images/entertainment.png';
 import dictionaryImg from '../assets/images/dictionary.png';
 import githubUserSearchImg from '../assets/images/github-user-search.png';
-import spPortfolioImg from '../assets/images/sp-portfolio.png';
+
+export const navLinks = [
+  {
+    name: 'About',
+    href: '#about',
+    key: 1,
+  },
+  {
+    name: 'Projects',
+    href: '#projects',
+    key: 3,
+  },
+  {
+    name: 'Contact',
+    href: '#contact',
+    key: 4,
+  },
+];
 
 export const projects = [
   {
@@ -30,14 +47,5 @@ export const projects = [
     github: 'https://github.com/adkenney/github-user-search-app',
     live: 'https://adkenney-github-search.netlify.app',
     tools: ['React', 'CSS Modules', 'GitHub API'],
-  },
-  {
-    name: 'Single Page Portfolio',
-    description:
-      'Sample single page portfolio website built to brush up on styling with CSS',
-    image: spPortfolioImg,
-    github: 'https://github.com/adkenney/single-page-developer-portfolio',
-    live: 'https://adkenney-sp-portfolio.netlify.app',
-    tools: ['React', 'CSS Modules'],
   },
 ];

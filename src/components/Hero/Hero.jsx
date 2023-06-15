@@ -2,8 +2,8 @@ import Image from 'next/image';
 import profileImg from '../../assets/images/Image.png';
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center gap-4 mt-12 md:flex-row md:gap-8">
-      <div className="relative border-2 rounded-full border-aggie-gold overflow-hidden max-w-xs">
+    <section className="flex flex-col items-center gap-4 mt-20 md:flex-row md:gap-8">
+      <div className="relative border-2 rounded-full border-aggie-gold overflow-hidden max-w-[15em]">
         <Image src={profileImg} alt="Arkell Kenney" />
       </div>
       <div className="hero-heading">

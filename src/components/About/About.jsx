@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section id="about">
+    <section
+      id="about"
+      className="flex flex-col justify-center items-center lg:text-xl"
+    >
       <h2>About Me</h2>
       <p className="mb-2">
         Hi there! I am Arkell, and I am an enthusiastic web developer always
