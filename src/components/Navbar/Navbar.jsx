@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
 import Link from 'next/link';
 import { motion, useCycle, AnimatePresence } from 'framer-motion';
 import MenuButton from './MenuButton';
 import { navLinks } from '@/utils';
+import logo from '../../../public/logo.svg';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [open, cycleOpen] = useCycle(false, true);
@@ -28,21 +29,9 @@ export default function Navbar() {
     open: { opacity: 1 },
   };
 
-  // useEffect(() => {
-  //   /* close dropdown menu when clicking outside of the menu */
-  //   const handleMenu = () => {
-  //     if (open) {
-  //       cycleOpen(false);
-  //     }
-  //   };
-  //   window.addEventListener('click', handleMenu);
-
-  //   return () => {
-  //     window.removeEventListener('click', handleMenu);
-  //   };
-  // });
   return (
-    <header className="fixed flex top-0 left-0 right-0 justify-end px-4 py-2 bg-light-navy shadow-md z-10 md:px-10 lg:px-20 lg:py-6">
+    <header className="fixed flex top-0 left-0 right-0 justify-between items-center px-4 py-2 bg-light-navy shadow-md z-10 md:px-10 lg:px-20 lg:py-6">
+      <Logo />
       <div className="hidden lg:block">
         <nav>
           <ul className="flex justify-end gap-2">
@@ -60,7 +49,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.aside
-            className="fixed right-0 justify-center bg-light-navy"
+            className="fixed top-0 right-0 justify-center bg-light-navy"
             initial={{ width: 0 }}
             animate={{ width: 'min(65vw, 350px)', height: '100dvh' }}
             exit={{ width: 0, transition: { delay: 0.7, duration: 0.3 } }}

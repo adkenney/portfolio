@@ -1,6 +1,7 @@
 import entertainmentImg from '../assets/images/entertainment.png';
 import dictionaryImg from '../assets/images/dictionary.png';
 import githubUserSearchImg from '../assets/images/github-user-search.png';
+import portfolioWebsiteImg from '../assets/images/portfolio.png';
 
 export const navLinks = [
   {
@@ -29,6 +30,14 @@ export const projects = [
     github: 'https://github.com/adkenney/entertainment-web-app',
     live: 'https://adkenney-entertainment.netlify.app/',
     tools: ['Next.js', 'Tailwind CSS', 'TMDb API'],
+  },
+  {
+    name: 'Portfolio Website',
+    description: 'Current version of my portfolio website.',
+    image: portfolioWebsiteImg, // https
+    github: 'https://github.com/adkenney/portfolio',
+    live: '',
+    tools: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
   },
   {
     name: 'Dictionary',
