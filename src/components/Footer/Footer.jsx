@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import gitHubIcon from '../../assets/icons/icons8-github.svg';
 import linkedinIcon from '../../assets/icons/icons8-linkedin.svg';
 
@@ -9,14 +10,22 @@ export default function Footer() {
       <div>
         <ul className="social-links">
           <li>
-            <a href="https://github.com/adkenney" target="_blank">
+            <Link
+              href="https://github.com/adkenney"
+              target="_blank"
+              aria-label="github profile"
+            >
               <Image src={gitHubIcon} alt="" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://linkedin.com/in/arkellkenney" target="_blank">
+            <Link
+              href="https://linkedin.com/in/arkellkenney"
+              target="_blank"
+              aria-label="linkedin profile"
+            >
               <Image src={linkedinIcon} alt="" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
