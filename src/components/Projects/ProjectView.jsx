@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import gitHubIcon from '../../assets/icons/icons8-github.svg';
 import ExternalIcon from '../../assets/icons/icons8-external-icon.svg';
 export default function ProjectView({
@@ -22,12 +23,22 @@ export default function ProjectView({
         </ul>
       </div>
       <div className="project-links">
-        <a href={githubLink} target="_blank" rel="noreferrer">
+        <Link
+          href={githubLink}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Look at the source code here"
+        >
           <Image src={gitHubIcon} alt="" />
-        </a>
-        <a href={liveLink} target="_blank" rel="noreferrer">
+        </Link>
+        <Link
+          href={liveLink}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="See the live site here"
+        >
           <Image src={ExternalIcon} alt="" />
-        </a>
+        </Link>
       </div>
     </div>
   );

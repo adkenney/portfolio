@@ -34,9 +34,9 @@ export const projects = [
   {
     name: 'Portfolio Website',
     description: 'Current version of my portfolio website.',
-    image: portfolioWebsiteImg, // https
+    image: portfolioWebsiteImg,
     github: 'https://github.com/adkenney/portfolio',
-    live: '',
+    live: 'https://www.arkellkenney.com/',
     tools: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
   },
   {

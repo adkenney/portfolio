@@ -3,6 +3,7 @@ export default function MenuButton({ isOpen, handleCycle }) {
     <button
       className="hamburger flex justify-self-end lg:hidden z-50"
       aria-expanded={`${isOpen ? true : false}`}
+      aria-label="menu button"
       onClick={handleCycle}
     >
       <svg
